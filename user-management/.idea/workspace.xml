@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="78105aea-e256-49fa-8a73-395cf087ae6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/UserCmdApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/aggregates/UserAggregates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/RegisterUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/RemoveUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/UpdateUserCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RegisterUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/dto/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/dto/RegisterUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/security/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/security/impl/PasswordEncoderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/test/java/com/cqrsbank/user_cmd_api/UserCmdApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/config/AxonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/events/UserRegisteredEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/events/UserRemovedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/events/UserUpdatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/models/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-core/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/UserQueryApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/handlers/UserEventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/handlers/impl/UserEventHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-query-api/src/test/java/com/example/userqueryapi/UserQueryApiApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29Psi3t9nsijtlpqYbnT45GLEzR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Ali/Desktop/event-driven-cqrs-microservices/user-management/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MTConfigurable",
+    "spring.configuration.checksum": "81f57756f1d3e03cd8881c960ac078bf",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cqrsbank.user_cmd_api.dto" />
+      <recent name="com.example.userqueryapi.repository" />
+      <recent name="com.example.usercore.models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali\Desktop\event-driven-cqrs-microservices\user-management\user-cmd-api\src\main\java\com\cqrsbank\user_cmd_api" />
+      <recent name="C:\Users\Ali\Desktop\event-driven-cqrs-microservices\user-management" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.usercore.events" />
+      <recent name="com.example.userqueryapi.config" />
+      <recent name="com.cqrsbank.user_cmd_api.config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserQueryApiApplication">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.usercore.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCmdApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user_cmd_api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cqrsbank.user_cmd_api.UserCmdApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserCoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-core" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.usercore.UserCoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserQueryApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-query-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userqueryapi.UserQueryApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78105aea-e256-49fa-8a73-395cf087ae6e" name="Changes" comment="" />
+      <created>1653026178627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653026178627</updated>
+      <workItem from="1653026180068" duration="736000" />
+      <workItem from="1653026939428" duration="8386000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/handlers/impl/UserEventHandlerImpl.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
