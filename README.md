@@ -7,6 +7,8 @@
 
 > Technology Stack :
 
+> CQRS with AXON Server 
+
 > Microservices Arthictecture
 
 > Spring Cloud
@@ -19,4 +21,4 @@
 
 > Java 17 
 
-> CQRS 
+
