@@ -5,38 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78105aea-e256-49fa-8a73-395cf087ae6e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/oauth-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/OauthServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oauth-server/src/test/java/com/oauth/server/oauthserver/OauthServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RemoveUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/UpdateUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-core/src/main/java/com/example/usercore/dto/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/controller/UserLookupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/dto/UserLookupResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/handlers/UserQueryHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/handlers/impl/UserQueryHandlerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/queries/FindAllUsersQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/queries/FindUserByIdQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/queries/SearchUserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/src/main/java/com/example/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/config/AuthServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/RemoveUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/RemoveUserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/UpdateUserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/commands/UpdateUserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/java/com/oauth/server/oauthserver/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth-server/src/test/java/com/oauth/server/oauthserver/OauthServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/test/java/com/example/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-cmd-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/UserCmdApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/UserCmdApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RegisterUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RegisterUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RemoveUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/RemoveUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/UpdateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api/controller/UpdateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-cmd-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-cmd-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-query-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-query-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/UserQueryApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/UserQueryApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/controller/UserLookupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-query-api/src/main/java/com/example/userqueryapi/controller/UserLookupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-query-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-query-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,13 +87,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17 (3)",
-    "last_opened_file_path": "C:/Users/Ali/Desktop/event-driven-cqrs-microservices/user-management/user-cmd-api/src/main/java/com/cqrsbank/user_cmd_api",
+    "jdk.selected.JAVA_MODULE": "17 (2)",
+    "last_opened_file_path": "C:/Users/Ali/Desktop/event-driven-cqrs-microservices/user-management/user-cmd-api/src/main/java/com/cqrsbank",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MTConfigurable",
-    "spring.configuration.checksum": "81f57756f1d3e03cd8881c960ac078bf",
+    "spring.configuration.checksum": "43983f12fb3fadbd36cf34249c5605b2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -125,10 +122,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserQueryApiApplication">
+  <component name="RunManager" selected="Spring Boot.OauthServerApplication">
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="user-core" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.usercore.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gatewayservice.GatewayServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,7 +175,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653026178627</updated>
       <workItem from="1653026180068" duration="736000" />
-      <workItem from="1653026939428" duration="18397000" />
+      <workItem from="1653026939428" duration="20215000" />
+      <workItem from="1653067618608" duration="2580000" />
     </task>
     <servers />
   </component>

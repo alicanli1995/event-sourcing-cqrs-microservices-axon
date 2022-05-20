@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.cloud:spring-cloud-gateway-server:3.1.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/3.1.3-SNAPSHOT/spring-cloud-gateway-server-3.1.3-20220520.174756-46.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/3.1.3-SNAPSHOT/spring-cloud-gateway-server-3.1.3-20220520.174756-46-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-gateway-server/3.1.3-SNAPSHOT/spring-cloud-gateway-server-3.1.3-20220520.174756-46-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

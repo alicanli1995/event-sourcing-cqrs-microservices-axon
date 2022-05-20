@@ -7,7 +7,6 @@ import org.springframework.data.mongodb.repository.Query;
 import java.util.Optional;
 
 public interface UserRepository extends MongoRepository<User,String > {
-
-    @Query("{'account.userName':  ?0}")
-    Optional<User> findByUsername(String userName);
+    @Query("{'account.username': ?0}")
+    Optional<User> findByUsername(String username);
 }

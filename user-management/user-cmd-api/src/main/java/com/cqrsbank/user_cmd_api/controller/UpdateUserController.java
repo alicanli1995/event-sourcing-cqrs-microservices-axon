@@ -7,6 +7,7 @@ import lombok.extern.log4j.Log4j2;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -19,8 +20,8 @@ public class UpdateUserController {
 
     private final CommandGateway commandGateway;
 
-
     @PutMapping(path = "/{id}")
+    @PreAuthorize("hasAuthority('WRITE_PRIVILEGE')")
     public ResponseEntity<BaseResponse> updateUser(@PathVariable("id") String  id ,
                                                    @Valid @RequestBody UpdateUserCommand updateUserCommand){
         try{
