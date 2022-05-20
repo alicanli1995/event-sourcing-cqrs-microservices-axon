@@ -2,6 +2,7 @@ package com.cqrsbank.user_cmd_api.controller;
 
 import com.cqrsbank.user_cmd_api.commands.RegisterUserCommand;
 import com.cqrsbank.user_cmd_api.dto.RegisterUserResponse;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.springframework.http.HttpStatus;
@@ -16,14 +17,12 @@ import java.util.UUID;
 
 @RestController
 @Log4j2
+@RequiredArgsConstructor
 @RequestMapping("/api/v1/registerUser")
 public class RegisterUserController {
 
     private final CommandGateway commandGateway;
 
-    public RegisterUserController(CommandGateway commandGateway){
-        this.commandGateway = commandGateway;
-    }
 
     @PostMapping
     public ResponseEntity<RegisterUserResponse> saveUser(@RequestBody @Valid RegisterUserCommand registerUserCommand){

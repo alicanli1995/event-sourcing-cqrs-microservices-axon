@@ -10,11 +10,13 @@
         <module name="user-query-api" />
         <module name="user-core" />
         <module name="user_cmd_api" />
+        <module name="oauth-server" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="oauth-server" options="-parameters" />
       <module name="user-core" options="-parameters" />
       <module name="user-query-api" options="-parameters" />
       <module name="user_cmd_api" options="-parameters" />
