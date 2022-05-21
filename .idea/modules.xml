@@ -3,12 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/event-driven-cqrs-microservices.iml" filepath="$PROJECT_DIR$/.idea/event-driven-cqrs-microservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/oauth-server/oauth-server.iml" filepath="$PROJECT_DIR$/user-management/oauth-server/oauth-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/user-core/user-core.iml" filepath="$PROJECT_DIR$/user-management/user-core/user-core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/user-management.iml" filepath="$PROJECT_DIR$/user-management/user-management.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/user-query-api/user-query-api.iml" filepath="$PROJECT_DIR$/user-management/user-query-api/user-query-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-management/user-cmd-api/user_cmd_api.iml" filepath="$PROJECT_DIR$/user-management/user-cmd-api/user_cmd_api.iml" />
     </modules>
   </component>
 </project>

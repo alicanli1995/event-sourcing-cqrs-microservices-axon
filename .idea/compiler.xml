@@ -7,24 +7,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="user-query-api" />
+        <module name="bank-core" />
         <module name="user-core" />
+        <module name="bank-acc-cmd-api" />
         <module name="gateway-service" />
         <module name="user_cmd_api" />
+        <module name="user-query-api" />
+        <module name="bank-acc-query-api" />
         <module name="oauth-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="gateway-service" target="17" />
-      <module name="oauth-server" target="17" />
-      <module name="user-core" target="17" />
-      <module name="user-management" target="17" />
-      <module name="user-query-api" target="17" />
-      <module name="user_cmd_api" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bank-acc-cmd-api" options="-parameters" />
+      <module name="bank-acc-query-api" options="-parameters" />
+      <module name="bank-core" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="oauth-server" options="-parameters" />
       <module name="user-core" options="-parameters" />
