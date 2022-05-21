@@ -10,7 +10,6 @@ import com.example.bankaccqueryapi.queries.FindAllAccountsQuery;
 import com.example.bankaccqueryapi.repository.AccountRepository;
 import com.example.bankcore.models.BankAccount;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.java.Log;
 import lombok.extern.log4j.Log4j2;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.stereotype.Service;
@@ -59,7 +58,7 @@ public class AccountQueryHandlerImpl implements AccountQueryHandler {
         var bankAccounts = query.getEqualityType().equals(EqualityType.GREATER_THAN) ?
                 accountRepository.findByBalanceGreaterThan(query.getBalance())
                 : accountRepository.findByBalanceLessThan(query.getBalance());
-        return bankAccounts  != null && bankAccounts.size()>0 ?
+        return bankAccounts  != null && !bankAccounts.isEmpty() ?
                     new AccountLookupResponse(bankAccounts, "Success return records ")
                     : new AccountLookupResponse("Database has not record for this query...!");
     }
