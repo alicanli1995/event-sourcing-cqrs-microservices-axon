@@ -1,5 +1,4 @@
-## Proje yapım aşamasındadır aralıklarla güncellenecek bitince tam dökümantasyon eklenecek genel yapı ve içereceği teknolojiler aşağıdaki gibidir.
-
+## Event-sourcing banking application with cqrs desing patterns microservices arthitecture -> on axon-event-bus-server
 <p align="center">
 <img src="img/diagram.jpg" alt="ci" width="700" class="center"/>
 </p>
