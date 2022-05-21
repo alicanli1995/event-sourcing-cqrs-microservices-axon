@@ -11,14 +11,16 @@
         <module name="bank-acc-query-api-v2" />
         <module name="user-core" />
         <module name="bank-acc-cmd-api" />
+        <module name="user-command-api" />
         <module name="gateway-service" />
-        <module name="user_cmd_api" />
         <module name="user-query-api" />
         <module name="bank-acc-query-api" />
         <module name="oauth-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="user_cmd_api" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -27,6 +29,7 @@
       <module name="bank-core" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
       <module name="oauth-server" options="-parameters" />
+      <module name="user-command-api" options="-parameters" />
       <module name="user-core" options="-parameters" />
       <module name="user-query-api" options="-parameters" />
       <module name="user_cmd_api" options="-parameters" />

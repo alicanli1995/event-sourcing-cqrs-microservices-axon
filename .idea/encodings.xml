@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/user-management/oauth-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-management/user-cmd-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-management/user-cmd-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-management/user-command-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-management/user-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-management/user-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-management/user-query-api/src/main/java" charset="UTF-8" />

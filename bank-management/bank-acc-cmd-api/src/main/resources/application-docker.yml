@@ -1,0 +1,19 @@
+server:
+  port: 9588
+
+spring:
+  data:
+    mongodb:
+      host: mongo-container
+      port: 27017
+      database: bank
+
+axon:
+  axonserver:
+    servers: axon-server
+
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: springCqrsTrainingKey

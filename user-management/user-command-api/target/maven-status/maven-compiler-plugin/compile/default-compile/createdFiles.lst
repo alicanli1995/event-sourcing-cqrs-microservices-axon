@@ -1,0 +1,15 @@
+com\cqrsbank\controller\RegisterUserController.class
+com\cqrsbank\dto\RegisterUserResponse.class
+com\user\command\api\UserCmdApiApplication.class
+com\cqrsbank\controller\RemoveUserController.class
+com\cqrsbank\config\SecurityConfig.class
+com\cqrsbank\controller\UpdateUserController.class
+com\cqrsbank\commands\RegisterUserCommand.class
+com\cqrsbank\security\PasswordEncoder.class
+com\cqrsbank\commands\UpdateUserCommand$UpdateUserCommandBuilder.class
+com\cqrsbank\aggregates\UserAggregates.class
+com\cqrsbank\commands\RegisterUserCommand$RegisterUserCommandBuilder.class
+com\cqrsbank\dto\BaseResponse.class
+com\cqrsbank\commands\UpdateUserCommand.class
+com\cqrsbank\commands\RemoveUserCommand.class
+com\cqrsbank\security\impl\PasswordEncoderImpl.class

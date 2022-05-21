@@ -10,10 +10,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>user-cmd-api</module>
+        <module>user-command-api</module>
         <module>user-core</module>
         <module>user-query-api</module>
         <module>oauth-server</module>
+        <module>user-command-api</module>
     </modules>
 
     <properties>
