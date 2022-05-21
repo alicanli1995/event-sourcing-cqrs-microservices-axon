@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "d7c55501-950b-48f2-80ec-4656eb252689",
+		"name": "CQRS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18925730"
+	},
+	"item": [
+		{
+			"name": "GATEWAY",
+			"item": [
+				{
+					"name": "PostUser GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMjQ0NTcsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJjZWMyZDMyYy1kNTEzLTQ4MWYtYmE4Zi05MTI1NjUzNWExMDYiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.M57HGZtN7q9cfva94iCPQ3WlDo5CDVsi1c3E7E6HDNo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\" :{ \r\n        \"firstName\": \"asdsad\",\r\n        \"lastName\" : \"asdasd\",\r\n        \"emailAddress\" :\"asdad@gmail.com\",\r\n        \"account\" : {\r\n            \"username\" : \"22d2d2d2d\",\r\n            \"password\" : \"dene222me2\",\r\n            \"roles\" : [\r\n                    \"WRITE_PRIVILEGE\"\r\n                ] \r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:2023/api/v1/registerUser"
+					},
+					"response": []
+				},
+				{
+					"name": "PostAccount GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMzg5MjcsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJhMzVkNDEyNC0wNzg0LTQ0NjktOGU0ZS0yNDRlZDVkZjQzMzYiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.yB8cTVlYSU107lBw8hnblMTyhBLfHxD_PRfzvR5lewI"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountHolderId\" : \"ca97c622-3e5f-4e1c-930c-120128549d67\",\r\n    \"accountType\" : \"CURRENT\",\r\n    \"openingBalance\" : 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:2023/api/v1/openAccount"
+					},
+					"response": []
+				},
+				{
+					"name": "DepositFunds GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMzc2NzUsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiI5ZGExYzQ5Yi0wZDEzLTQ3NTktYWY4Mi1hNTdiZWYxOGM5MTciLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.FvxmVpBhpPVY5tiF3D27UiW9rCpg7dU2SZ_FlfY6aUQ"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\" : 999\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:2023/api/v1/depositFunds/f1900fb6-4b73-4f18-9ec8-3a717f867e58"
+					},
+					"response": []
+				},
+				{
+					"name": "Withdraw Funds GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMzc2NzUsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiI5ZGExYzQ5Yi0wZDEzLTQ3NTktYWY4Mi1hNTdiZWYxOGM5MTciLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.FvxmVpBhpPVY5tiF3D27UiW9rCpg7dU2SZ_FlfY6aUQ"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\" : 323222\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:2023/api/v1/withdrawFunds/f1900fb6-4b73-4f18-9ec8-3a717f867e58"
+					},
+					"response": []
+				},
+				{
+					"name": "FindAll Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMjQ0NTcsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJjZWMyZDMyYy1kNTEzLTQ4MWYtYmE4Zi05MTI1NjUzNWExMDYiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.M57HGZtN7q9cfva94iCPQ3WlDo5CDVsi1c3E7E6HDNo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2023/api/v1/userLookup/"
+					},
+					"response": []
+				},
+				{
+					"name": "FindAll Accounts Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxNDIxMTEsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiIyYWI4ZTdlYS1mNDFjLTQ2ZTYtOWQ3Ny1mYzkxZTZkMGZmNDEiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.h4pDmhuM36zOMuvQxGyS4A57J_BK3gGvJfiWS7NTmSk"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2023/api/v1/bankAccountLookup/"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Account By ID Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxNDIxNzIsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJkNjJhZjljZi0yNjEyLTRjNDQtOTQ4Mi01MzAxMDdmMjUxNzgiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.gn3stRt0sj_cXvub3M7m4-2t57SBKypdOcA4K3yf9-I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2023/api/v1/bankAccountLookup/byId/1aa22892-f670-406a-8d5d-4373fcfaffe5"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Account By HOLDER ID Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxNDIxNzIsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJkNjJhZjljZi0yNjEyLTRjNDQtOTQ4Mi01MzAxMDdmMjUxNzgiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.gn3stRt0sj_cXvub3M7m4-2t57SBKypdOcA4K3yf9-I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2023/api/v1/bankAccountLookup/byHolderId/ca97c622-3e5f-4e1c-930c-120128549d67"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Account By Balance Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxNDIxNzIsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJkNjJhZjljZi0yNjEyLTRjNDQtOTQ4Mi01MzAxMDdmMjUxNzgiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.gn3stRt0sj_cXvub3M7m4-2t57SBKypdOcA4K3yf9-I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2023/api/v1/bankAccountLookup/balance/GREATER_THAN/50"
+					},
+					"response": []
+				},
+				{
+					"name": "FindById Query GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNzUyODEsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJjOGZiMzMwMy1lN2VkLTRmMmItOWM3Ni0zYzA2YTUyN2VjZmQiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.LjRe3b6QZ4d-NzZf_8CSnxnyszE7LdkJhzxc0-D0EAs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:9596/api/v1/userLookup/ca97c622-3e5f-4e1c-930c-120128549d67"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Acccount GATEWAY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMxMzg5MjcsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJhMzVkNDEyNC0wNzg0LTQ0NjktOGU0ZS0yNDRlZDVkZjQzMzYiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.yB8cTVlYSU107lBw8hnblMTyhBLfHxD_PRfzvR5lewI"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://localhost:2023/api/v1/closedAccount/e5e3fca8-57c7-4882-a6aa-afa3a847fc22"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PostUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNjg5NzYsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJmM2MyMzJhZi0zM2JmLTRjYmEtYmE5YS05OTA1MTdkOWM5YjAiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.qx89NQWdVF5-KsjN0bNtRdktUI8k-Pd5us0HKvNVuaw"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\" :{ \r\n        \"firstName\": \"qwdqwdqw\",\r\n        \"lastName\" : \"qwdqwdqwd\",\r\n        \"emailAddress\" :\"tewwwwt2@gmail.com\",\r\n        \"account\" : {\r\n            \"username\" : \"xxxxxxx\",\r\n            \"password\" : \"dene222me2\",\r\n            \"roles\" : [\r\n                    \"WRITE_PRIVILEGE\"\r\n                ] \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/registerUser"
+			},
+			"response": []
+		},
+		{
+			"name": "EditUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNjg5NzYsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiJmM2MyMzJhZi0zM2JmLTRjYmEtYmE5YS05OTA1MTdkOWM5YjAiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.qx89NQWdVF5-KsjN0bNtRdktUI8k-Pd5us0HKvNVuaw"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\" :{ \r\n        \"firstName\": \"qwdqwdqw\",\r\n        \"lastName\" : \"qwdqwdwwwwwwwwwqwd\",\r\n        \"emailAddress\" :\"tewwwwt2@gmail.com\",\r\n        \"account\" : {\r\n            \"username\" : \"xxxxxxx\",\r\n            \"password\" : \"dene222me2\",\r\n            \"roles\" : [\r\n                    \"WRITE_PRIVILEGE\"\r\n                ] \r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/v1/updateUser/2b6ddec5-f77f-48fb-8fd5-1ecaab2ad580"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNjkzNzAsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiI5MzVmMjFmOC0wOWYzLTQwODAtYWE3ZC1lMTE5ZjI4MThjZTMiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.K7XUh03cairEb7F1ogi74APtohZXc8CfVYSo1GB7gwE"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://localhost:8081/api/v1/deleteUser/2b6ddec5-f77f-48fb-8fd5-1ecaab2ad580"
+			},
+			"response": []
+		},
+		{
+			"name": "FindAll Query",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNzUxNzQsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiIwYmI4NjNmMC0yOTgyLTQxMzItYTIzMC03NDczNjY5ODY3ZjUiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.C5BNWjZg43lcLcN0A1H4HfNNsb1tC6ABEkkaoBADuHs"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9596/api/v1/userLookup/"
+			},
+			"response": []
+		},
+		{
+			"name": "FindById Query",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNjkzNzAsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiI5MzVmMjFmOC0wOWYzLTQwODAtYWE3ZC1lMTE5ZjI4MThjZTMiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.K7XUh03cairEb7F1ogi74APtohZXc8CfVYSo1GB7gwE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9596/api/v1/userLookup/ca97c622-3e5f-4e1c-930c-120128549d67"
+			},
+			"response": []
+		},
+		{
+			"name": "FilterBy Query",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTMwNjkzNzAsInVzZXJfbmFtZSI6InRlc3Qyc2EiLCJhdXRob3JpdGllcyI6WyJSRUFEX1BSSVZJTEVHRSIsIldSSVRFX1BSSVZJTEVHRSJdLCJqdGkiOiI5MzVmMjFmOC0wOWYzLTQwODAtYWE3ZC1lMTE5ZjI4MThjZTMiLCJjbGllbnRfaWQiOiJzcHJpbmdDcXJzVHJhaW5pbmciLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXX0.K7XUh03cairEb7F1ogi74APtohZXc8CfVYSo1GB7gwE"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9596/api/v1/userLookup/filter/tessat2@gmail.com"
+			},
+			"response": []
+		},
+		{
+			"name": "Get JWT",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic c3ByaW5nQ3Fyc1RyYWluaW5nOnNwcmluZ0NxcnNUcmFpbmluZ1NlY3JldA==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "test2sa",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "deneme2",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8083/oauth/token"
+			},
+			"response": []
+		}
+	]
+}

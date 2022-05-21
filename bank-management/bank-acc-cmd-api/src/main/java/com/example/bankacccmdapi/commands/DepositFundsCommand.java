@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 import java.math.BigDecimal;
 
 @Data
@@ -17,8 +19,8 @@ public class DepositFundsCommand {
     @TargetAggregateIdentifier
     private String id;
 
-    private BigDecimal amount;
-
-    private BigDecimal balance;
+    @NotNull
+    @Positive(message = "Must be positive.")
+    private double amount;
 
 }

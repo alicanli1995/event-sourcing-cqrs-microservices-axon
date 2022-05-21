@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
+import javax.validation.constraints.Positive;
 import java.math.BigDecimal;
 
 @Data
@@ -18,7 +19,7 @@ public class WithdrawFundsCommand {
     @TargetAggregateIdentifier
     private String id;
 
-    private BigDecimal amount;
+    @Positive(message = "Must be a positive.")
+    private double amount;
 
-    private BigDecimal balance;
 }

@@ -8,6 +8,7 @@ import com.example.bankcore.events.AccountClosedEvent;
 import com.example.bankcore.events.AccountOpenedEvent;
 import com.example.bankcore.events.FundsDepositedEvent;
 import com.example.bankcore.events.FundsWithdrawEvent;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
@@ -27,7 +28,7 @@ public class AccountAggregate {
 
     private String accountHolderId;
 
-    private BigDecimal balance;
+    private double balance;
 
     @CommandHandler
     public AccountAggregate(OpenAccCommand openAccCommand){
@@ -54,27 +55,27 @@ public class AccountAggregate {
         var event = FundsDepositedEvent.builder()
                 .id(command.getId())
                 .amount(amount)
-                .balance(this.balance.add(amount))
+                .balance(this.balance + (amount))
                 .build();
         AggregateLifecycle.apply(event);
     }
 
     @EventSourcingHandler
     public void on(FundsDepositedEvent event){
-        this.balance = this.balance.add(event.getAmount());
+        this.balance = this.balance+(event.getAmount());
     }
 
 
     @CommandHandler
     public void handle(WithdrawFundsCommand command){
         var amount = command.getAmount();
-        if(this.balance.subtract(amount).compareTo(BigDecimal.ZERO) < 0)
+        if((this.balance - (amount)) < 0)
             throw new IllegalStateException("Withdraw declined, balance not enough for this process.");
 
         var event = FundsWithdrawEvent.builder()
                 .id(command.getId())
                 .amount(amount)
-                .balance(this.balance.subtract(amount))
+                .balance(this.balance-(amount))
                 .build();
         AggregateLifecycle.apply(event);
     }
@@ -82,7 +83,7 @@ public class AccountAggregate {
 
     @EventSourcingHandler
     public void on(FundsWithdrawEvent event){
-        this.balance = this.balance.subtract(event.getAmount());
+        this.balance = this.balance -(event.getAmount());
     }
 
     @CommandHandler

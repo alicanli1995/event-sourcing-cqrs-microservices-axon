@@ -37,18 +37,4 @@ public class UserLookupResponse extends BaseResponse {
         users.add(user);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof UserLookupResponse that)) return false;
-        if (!super.equals(o)) return false;
-        return users.equals(that.users);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + users.hashCode();
-        return result;
-    }
 }

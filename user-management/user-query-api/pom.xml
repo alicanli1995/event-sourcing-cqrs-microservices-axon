@@ -14,7 +14,7 @@
     <name>user-query-api</name>
     <description>user-query-api</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>15</java.version>
     </properties>
     <dependencies>
         <dependency>

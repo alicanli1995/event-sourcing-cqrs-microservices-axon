@@ -15,8 +15,8 @@ public class FundsWithdrawEvent {
 
     private String id;
 
-    private BigDecimal amount;
+    private double amount;
 
-    private BigDecimal balance;
+    private double balance;
 
 }

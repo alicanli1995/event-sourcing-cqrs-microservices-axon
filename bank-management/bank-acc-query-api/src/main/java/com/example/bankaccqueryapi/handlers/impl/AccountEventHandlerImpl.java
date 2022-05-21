@@ -7,19 +7,24 @@ import com.example.bankcore.events.AccountOpenedEvent;
 import com.example.bankcore.events.FundsDepositedEvent;
 import com.example.bankcore.events.FundsWithdrawEvent;
 import com.example.bankcore.models.BankAccount;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.axonframework.config.ProcessingGroup;
 import org.axonframework.eventhandling.EventHandler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 @Service
 @Log4j2
-@RequiredArgsConstructor
-@ProcessingGroup("bank-account-group")
+@ProcessingGroup("bankaccount-group")
 public class AccountEventHandlerImpl implements AccountEventHandler {
 
     private final AccountRepository accountRepository;
+
+    @Autowired
+    public AccountEventHandlerImpl(AccountRepository accountRepository) {
+        this.accountRepository = accountRepository;
+    }
 
     @Override
     @EventHandler

@@ -23,6 +23,6 @@ public class AccountOpenedEvent {
 
     private Date createDate;
 
-    private BigDecimal openingBalance;
+    private double openingBalance;
 
 }

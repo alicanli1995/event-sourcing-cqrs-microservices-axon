@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bank-core" />
+        <module name="bank-acc-query-api-v2" />
         <module name="user-core" />
         <module name="bank-acc-cmd-api" />
         <module name="gateway-service" />
@@ -17,6 +18,7 @@
         <module name="oauth-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
